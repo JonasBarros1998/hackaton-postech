@@ -302,7 +302,23 @@ curl --location 'http://localhost:8080/api/reservas/CLIENTE_ID' \
 ]'
 ```
 
-### Documentação do(s) bancos de dados utilizados
+# Arquitetura clean architecture
+
+Camada:  Enterprise business Rules
+Pacote da aplicação: dominio
+
+Camada: Application Business Rules
+Pacote: aplicacao
+
+Camada: Interface and Adapters
+Pacote: entradas
+
+Camada: Framework e drivers
+Pacote: infra
+
+
+
+# Documentação do(s) bancos de dados utilizados
 Banco: Postgresql
 
 [Diagrama do banco de dados e relacionamento entre tabelas](https://firebasestorage.googleapis.com/v0/b/app-english-class.appspot.com/o/DiagramaDeTabelas-hackaton.drawio.png?alt=media&token=e715dff0-1200-419f-abe0-5803613160b3)
