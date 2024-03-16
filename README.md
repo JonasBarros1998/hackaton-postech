@@ -32,7 +32,7 @@ curl --location 'http://localhost:8080/api/clientes' \
 
 editar cliente
 ```curl
-curl --location --request PUT 'http://localhost:8080/api/clientes/58fa4b39-09eb-404f-9baf-621139a3b951' \
+curl --location --request PUT 'http://localhost:8080/api/clientes/ID_DO_CLIENTE' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 	"paisDeOrigem": "Brasil",
@@ -160,7 +160,7 @@ curl --location --request DELETE 'http://localhost:8080/api/quartos/QUARTO_ID'
 
 Editar quartos
 ```curl
-curl --location --request PUT 'http://localhost:8080/api/quartos/2efc685f-7bd6-4637-898b-2341d00c173e' \
+curl --location --request PUT 'http://localhost:8080/api/quartos/QUARTO_ID' \
 --header 'Content-Type: application/json' \
 --data '{
 	"tipo": "Quarto Luxo att",
@@ -272,6 +272,34 @@ curl --location 'http://localhost:8080/api/produtos' \
 	"preco": 12.60,
 	"quantidade": 40
 }'
+```
+
+
+#### Reservas
+```curl
+curl --location 'http://localhost:8080/api/reservas/CLIENTE_ID' \
+--header 'Content-Type: application/json' \
+--data '[
+	{
+		"dataEntrada": "2024-03-15",
+		"dataSaida": "2024-03-20",
+		"quantidadeDePessoas": 2,
+		"quantidadeDeQuartos": 1,
+		"idDoQuarto": "QUARTO_ID",
+		"servico": [
+			{
+				"id": "SERVICO_ID",
+				"quantidade": 2
+			}
+		],
+		"produto": [
+			{
+				"id": "PRODUTO_ID",
+				"quantidade": 5
+			}
+		]
+	}
+]'
 ```
 
 ### Documentação do(s) bancos de dados utilizados
