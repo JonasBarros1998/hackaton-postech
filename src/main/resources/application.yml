@@ -1,0 +1,13 @@
+spring:
+  application:
+  name: hackaton
+  datasource:
+    driver-class-name: "org.postgresql.Driver"
+    username: hackaton
+    password: 12345678
+    url: "jdbc:postgresql://localhost:5432/hoteis"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
