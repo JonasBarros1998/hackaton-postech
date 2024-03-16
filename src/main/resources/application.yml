@@ -5,7 +5,7 @@ spring:
     driver-class-name: "org.postgresql.Driver"
     username: hackaton
     password: 12345678
-    url: "jdbc:postgresql://localhost:5432/hoteis"
+    url: "jdbc:postgresql://postgresql:5432/springbootdb"
   jpa:
     hibernate:
       ddl-auto: update
