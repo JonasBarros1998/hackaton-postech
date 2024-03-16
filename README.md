@@ -305,15 +305,22 @@ curl --location 'http://localhost:8080/api/reservas/CLIENTE_ID' \
 # Arquitetura clean architecture
 
 Camada:  Enterprise business Rules
+
 Pacote da aplicação: dominio
 
+## 
 Camada: Application Business Rules
+
 Pacote: aplicacao
 
+## 
 Camada: Interface and Adapters
+
 Pacote: entradas
 
+## 
 Camada: Framework e drivers
+
 Pacote: infra
 
 
