@@ -275,7 +275,7 @@ curl --location 'http://localhost:8080/api/produtos' \
 ```
 
 
-#### Reservas
+# Reservas
 ```curl
 curl --location 'http://localhost:8080/api/reservas/CLIENTE_ID' \
 --header 'Content-Type: application/json' \
