@@ -5,7 +5,7 @@
 
 ### 1- Siga os passos abaixo
 
-#### Clientes
+# Clientes
 
 consultar clientes
 ```curl
@@ -53,7 +53,7 @@ remover cliente
 curl --location --request DELETE 'http://localhost:8080/api/clientes/ID_DO_CLIENTE'
 ```
 
-#### Predios
+# Predios
 
 Adicionar predos e amenidades
 ```curl
@@ -111,7 +111,7 @@ Remover Predios
 curl --location --request DELETE 'http://localhost:8080/api/predios/'
 ```
 
-#### Quartos
+# Quartos
 
 Adicionar quartos
 ```curl
@@ -205,7 +205,7 @@ curl --location 'http://localhost:8080/api/quartos/consultar' \
 }'
 ```
 
-#### Servicos
+# Servicos
 
 consultar servicos
 
@@ -239,7 +239,7 @@ Remover servicos
 curl --location --request DELETE 'http://localhost:8080/api/servicos/'
 ```
 
-#### Produtos
+# Produtos
 
 consultar
 ```curl
